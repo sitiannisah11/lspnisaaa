@@ -115,3 +115,15 @@ Route::prefix('loginuser')->group(function(){
     Route::post('/proses-login', 'PageController@proses_login');
     Route::post('/proses-register', 'PageController@proses_register');
 });
+
+
+Route::prefix('transaksi')->group(function(){
+        Route::get('/', 'TransaksiController@transaksi')->name('transaksi');
+        Route::post('/proses-transaksi', 'TransaksiController@proses_transaksi')->name('transaksi_proses_transaksi');
+        Route::get('/proses_hapus/{id}', 'TransaksiController@proses_hapus')->name('transaksi_hapus');
+        Route::get('/proses_hapusall', 'TransaksiController@proses_hapus_all')->name('transaksi_hapus_all');
+        Route::get('/checkout', 'TransaksiController@checkout')->name('transaksi_checkout');
+        Route::post('/proses_checkout', 'TransaksiController@proses_checkout')->name('transaksi_proses_checkout');
+        Route::get('/kode_unik', 'TransaksiController@kode_unik')->name('kode_unik');
+        Route::get('/invoice', 'TransaksiController@invoice')->name('invoice');
+    });

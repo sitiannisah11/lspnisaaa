@@ -39,8 +39,8 @@ class BarangController extends Controller
     	$d->stok = $r->input("stok");
     	$d->keterangan = $r->input("keterangan");
     	$d->diskon = $r->input("diskon");
-        $d->laba = $r->input("laba_id");
-        $d->ppn = $r->input("stok_minimum");
+        $d->laba = $r->input("laba");
+        $d->ppn = $r->input("ppn");
 
 
 

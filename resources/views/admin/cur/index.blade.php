@@ -30,7 +30,7 @@
           <thead>
             <tr>
               <th>NO</th>
-              <th>Nama Jurusan</th>
+              <th>Nama Mata Uang</th>
               <th>Aksi</th>
             </tr>
           </thead>
