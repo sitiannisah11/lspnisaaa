@@ -52,7 +52,7 @@
                 <div class="control-list">
                     <div class="control-item"><a href="profile.html"><i class="fa fa-user"></i> Profile</a></div>
                     <div class="control-item"><a href="#"><i class="fa fa-gear"></i> Settings</a></div>
-                    <div class="control-item"><a href="#"><i class="fa fa-sign-out"></i> Log out</a></div>
+                    <div class="control-item"><a href="{{url('loginuser')}}"><i class="fa fa-sign-out"></i> Log out</a></div>
                 </div>
                 <!-- /.control-list -->
             </div>
@@ -126,7 +126,7 @@
         <!-- /.ico-item -->
         <a href="#" class="ico-item fa fa-envelope notice-alarm js__toggle_open" data-target="#message-popup"></a>
         <a href="#" class="ico-item pulse"><span class="ico-item fa fa-bell notice-alarm js__toggle_open" data-target="#notification-popup"></span></a>
-        <a href="#" class="ico-item fa fa-power-off js__logout"></a>
+        <a href="{{url('loginuser')}}" class="ico-item fa fa-power-off js__logout"></a>
     </div>
     <!-- /.pull-right -->
 </div>
