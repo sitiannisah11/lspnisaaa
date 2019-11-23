@@ -10,6 +10,7 @@
 
 
 <!-- DataTales Example -->
+<div class="box-content" style="width:100%;">
 <div class="container-fluid">
   <!-- Page Heading -->
   <h1 class="h3 mb-2 text-gray-800"></h1>
@@ -134,6 +135,10 @@
         </form>
       </div>
   </div>
+
+
+
+</div>
 </div>
 </div>
 @endforeach

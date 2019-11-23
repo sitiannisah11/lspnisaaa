@@ -8,7 +8,7 @@
         <div class="row small-spacing">
 
 
-
+<div class="box-content" style="width:100%">
 <!-- DataTales Example -->
 <div class="container-fluid">
   <!-- Page Heading -->
@@ -69,6 +69,7 @@
 
 
        	</div>
+        </div>
 	</div>
 </div>
 

@@ -9,7 +9,7 @@
 
 
 
-
+<div class="box-content" style="width:100%;">
                 <div class="container-fluid">
   <!-- Page Heading -->
   <h1 class="h3 mb-2 text-gray-800"></h1>
@@ -17,13 +17,13 @@
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
     <div class="card-header-index" style="display: flex; justify-content: space-between; align-items: center;">
-      <h6 class="m-0 font-weight-bold text-primary">Data Mata Unit Barang</h6>
+      <h6 class="m-0 font-weight-bold"><strong>Data Pengguna</strong></h6>
         <a href="/pengguna/tambah" data-toggle="modal">
       <button h class="btn btn-outline-primary">
           <i class="fas fa-plus"></i>
       </button>
         </a>
-    </div>
+    </div><br>
     <div class="card-body">
       <div class="table-responsive">
         <table class="table table-bordered" id="Table" width="100%" cellspacing="0">
@@ -49,7 +49,7 @@
                @else
                <td>Super Admin</td>
                @endif
-               <td><a href="{{route('pengguna_hapus', $penggunas->id)}}"><i class="fa fa-trash-o" aria-hidden="true" title="Hapus"></i></a></td>
+               <td><a href="{{route('pengguna_hapus', $penggunas->id)}}" class="hapus"><i class="fa fa-trash-o" aria-hidden="true" title="Hapus"></i></a></td>
             </tr>
             @endforeach
           </tbody>
@@ -58,8 +58,8 @@
     </div>
   </div>
 </div>
-
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </div>
 @endsection

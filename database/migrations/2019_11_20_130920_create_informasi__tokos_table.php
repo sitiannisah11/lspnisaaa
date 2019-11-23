@@ -20,7 +20,7 @@ class CreateInformasiTokosTable extends Migration
             $table->String('kode_pos');
             $table->String('deskripsi');
             $table->String('alamat');
-            $table->String('foto');
+            $table->String('foto')->nullable();
             $table->timestamps();
         });
     }

@@ -43,9 +43,13 @@
         <a href="index.html" class="logo">Super Admin</a>
         <button type="button" class="button-close fa fa-times js__menu_close"></button>
         <div class="user">
-            <a href="#" class="avatar"><img src="http://placehold.it/80x80" alt=""><span class="status online"></span></a>
-            <h5 class="name"><a href="profile.html">Emily Stanley</a></h5>
-            <h5 class="position">Administrator</h5>
+        <?php 
+            $name = \App\User::where('id', Auth::user()->id)->first();
+         ?>
+
+            <a href="#" class="avatar"><img src="/foto/superadmin.png" alt=""><span class="status online"></span></a>
+            <h5 class="name"><a href="profile.html">{{$name->name}}</a></h5>
+            <h5 class="position">Super Admin</h5>
             <!-- /.name -->
             <div class="control-wrap js__drop_down">
                 <i class="fa fa-caret-down js__drop_down_button"></i>
@@ -192,4 +196,34 @@
             buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
         });
     });
+</script>
+
+<script type="text/javascript">
+    var elems = document.getElementsByClassName('hapus');
+    var confirmIt = function (e) {
+        if (!confirm('Apakah Anda Yakin Ingin Menghapus nya?')) e.preventDefault();
+    };
+    for (var i = 0, l = elems.length; i < l; i++) {
+        elems[i].addEventListener('click', confirmIt, false);
+    }
+</script>
+
+<script type="text/javascript">
+    var elems = document.getElementsByClassName('edit');
+    var confirmIt = function (e) {
+        if (!confirm('Are you sure?')) e.preventDefault();
+    };
+    for (var i = 0, l = elems.length; i < l; i++) {
+        elems[i].addEventListener('click', confirmIt, false);
+    }
+</script>
+
+<script type="text/javascript">
+    var elems = document.getElementsByClassName('add');
+    var confirmIt = function (e) {
+        if (!confirm('Are you sure?')) e.preventDefault();
+    };
+    for (var i = 0, l = elems.length; i < l; i++) {
+        elems[i].addEventListener('click', confirmIt, false);
+    }
 </script>
