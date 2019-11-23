@@ -30,4 +30,12 @@ class Produk extends Model
 	{
     	return $this->belongsTo(Stok_Ppn::class, 'stokppn_id');
 	}
+
+	public function relasiunit() {
+    	return $this->belongsTo('App\Unit', 'unit_id');
+    }
+    
+    public function relasilaba() {
+    	return $this->belongsTo('App\Laba', 'unit_id');
+    }
 }

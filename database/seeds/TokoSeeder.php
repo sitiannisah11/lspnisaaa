@@ -17,7 +17,7 @@ class TokoSeeder extends Seeder
         	'kode_pos' => '13520',
         	'deskripsi' => 'Pos Mantap',
         	'alamat' => 'Jl.Batu Ampar',
-        	'foto' => 'Pos.jpg',
+        	'foto' => 'Pos.jpg'
         	]);
     }
 }

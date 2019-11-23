@@ -12,7 +12,7 @@ class CurSeeder extends Seeder
     public function run()
     {
         DB::table('mata__uangs')->insert([
-        	'nama' => 'IDR',
+        	'nama' => 'IDR'
         	]);
     }
 }

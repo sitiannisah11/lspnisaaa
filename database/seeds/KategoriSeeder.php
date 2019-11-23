@@ -12,7 +12,7 @@ class KategoriSeeder extends Seeder
     public function run()
     {
         DB::table('kategoris')->insert([
-        	'nama' => 'Makanan',
+        	'nama' => 'Makanan'
         	]);
     }
 }

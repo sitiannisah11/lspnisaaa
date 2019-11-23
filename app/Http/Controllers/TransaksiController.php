@@ -51,7 +51,7 @@ class TransaksiController extends Controller
         return view('kasir.transaksi.checkout', compact('produk', 'cart'));
     }
     public function proses_checkout(Request $r) {
-        $cart = Cart::where('user_id', '1')->get();
+        $cart = Cart::where('user_id', '1')->where('status', '0')->get();
       
         $cart2 = Cart::where('kode_unik', Session::get('kode_unik'))->update(array('status' => '1'));
         $checkout = new Checkout;

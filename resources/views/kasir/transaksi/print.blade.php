@@ -4,9 +4,12 @@
 <!-- DataTales Example -->
 
 <div id="wrapper">
-    <div class="main-content" id="section-to-print">
-<a href="#" onclick="printDoc()" class="btn btn-success my-3" target="_blank">PRINT</a>
+    <div class="main-content" >
         <div class="row small-spacing">
+          <a href="#" onclick="printDoc()" class="btn btn-success my-3" target="_blank">PRINT</a>
+          <a href="/transaksi"  class="btn btn-success my-3" target="_blank">Kembali Ke Transaksi</a>
+
+          <div class="box-content" id="section-to-print">
         	<div class="title" style="text-align: center;">
         	<h4>Bukti Pembayaran</h4>
         	<h4>POS ANDREA <h4>
@@ -30,11 +33,39 @@
 		    </tr>
 		    @endforeach
 		    @endforeach
+        <br>
 		  </tbody>
+
+
 		</table>
+
+<!-- MANGGIL MODEL -->
+    <table class="table table-condensed">
+                  <tr>
+                    <td class="no-line"></td>
+                    <td class="no-line"></td>
+                    <td class="no-line text-center"><strong>Total</strong></td>
+                    <td class="no-line text-right">454353</td>
+                  </tr>
+                  <tr>
+                    <td class="no-line"></td>
+                    <td class="no-line"></td>
+                    <td class="no-line text-center"><strong>Uang Pelanggan</strong></td>
+                    <td class="no-line text-right">454353</td>
+                  </tr>
+                  <tr>
+                    <td class="no-line"></td>
+                    <td class="no-line"></td>
+                    <td class="no-line text-center"><strong>Uang Kembalian</strong></td>
+                    <td class="no-line text-right">454353</td>
+                  </tr>
+            </table>
 
 
         </div>
+      </h4>
+    </h4>
+  </div>
     </div>
 </div>
 @endsection

@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
 });
 
@@ -29,13 +29,58 @@ Route::get('/barang', function () {
 Route::get('/superadmin', function () {
     return view('superadmin.index');
 });
-Route::get('/kasir', function () {
-    return view('kasir.index');
+*/
+
+
+
+
+
+/*Route::prefix('transaksi')->group(function(){
+    Route::get('/', 'TransaksiController@index');
+    });*/
+/*Route::prefix('datatransaksi')->group(function(){
+    Route::get('/', 'DatatransaksiController@index');
+    });*/
+
+
+Route::prefix('loginuser')->group(function(){
+    Route::get('/', 'PageController@login');
+    Route::get('/register', 'PageController@register');
+    Route::get('/logout', 'PageController@logout');
+    Route::post('/proses-login', 'PageController@proses_login');
+    Route::post('/proses-register', 'PageController@proses_register');
+});
+
+
+Route::group(['middleware' => 'superadmin'], function(){
+
+    Route::get('/superadmin', function () { return view('superadmin.index');});
+
+    Route::prefix('toko')->group(function(){
+    Route::get('/', 'TokoController@index');
+    Route::post('/update', 'TokoController@update');
+    
+    });
+
+Route::prefix('pengguna')->group(function(){
+        Route::get('/', 'PenggunaController@pengguna')->name('pengguna');
+        Route::get('/tambah', 'PenggunaController@tambah')->name('pengguna_tambah');
+        Route::post('/proses-tambah', 'PenggunaController@proses_tambah')->name('pengguna_proses_tambah');
+        Route::get('/detail/{id}', 'PenggunaController@detail')->name('pengguna_detail');
+        Route::get('/hapus/{id}', 'PenggunaController@hapus')->name('pengguna_hapus');
+    });
+
 });
 
 
 
-Route::prefix('cur')->group(function(){
+
+Route::group(['middleware' => 'admin'], function(){
+
+    Route::get('/admin', function () { return view('admin.index');});
+    Route::get('/laporan_barang', function () { return view('admin.laporan_barang.index');});
+
+    Route::prefix('cur')->group(function(){
     Route::get('/', 'CurController@index');
     Route::post('/add', 'CurController@add');
     Route::get('/edit/{id}', 'CurController@edit');
@@ -84,40 +129,24 @@ Route::prefix('barang')->group(function(){
     Route::get('/edit/{id}', 'BarangController@edit');
     Route::post('/update', 'BarangController@update');
     Route::get('/delete/{id}', 'BarangController@delete');
-    });
 
-Route::prefix('transaksi')->group(function(){
-    Route::get('/', 'TransaksiController@index');
-    });
-Route::prefix('datatransaksi')->group(function(){
-    Route::get('/', 'DatatransaksiController@index');
-    });
-
-Route::prefix('toko')->group(function(){
-    Route::get('/', 'TokoController@index');
-    Route::post('/update', 'TokoController@update');
-    
-    });
-
-Route::prefix('pengguna')->group(function(){
-        Route::get('/', 'PenggunaController@pengguna')->name('pengguna');
-        Route::get('/tambah', 'PenggunaController@tambah')->name('pengguna_tambah');
-        Route::post('/proses-tambah', 'PenggunaController@proses_tambah')->name('pengguna_proses_tambah');
-        Route::get('/detail/{id}', 'PenggunaController@detail')->name('pengguna_detail');
-        Route::get('/hapus/{id}', 'PenggunaController@hapus')->name('pengguna_hapus');
+    Route::get('/detail/{barcode}', 'BarangController@detail')->name('detail');
+    Route::post('/proses-detail/', 'BarangController@proses_detail')->name('proses_detail');
     });
 
 
-Route::prefix('loginuser')->group(function(){
-    Route::get('/', 'PageController@login');
-    Route::get('/register', 'PageController@register');
-    Route::get('/logout', 'PageController@logout');
-    Route::post('/proses-login', 'PageController@proses_login');
-    Route::post('/proses-register', 'PageController@proses_register');
+
 });
 
 
-Route::prefix('transaksi')->group(function(){
+
+Route::group(['middleware' => 'kasir'], function(){
+
+    Route::get('/kasir', function () { return view('kasir.index');});
+    Route::get('/datatransaksi', function () { return view('kasir.datatransaksi.index');});
+    Route::get('/kasir', function () { return view('kasir.index');});
+
+    Route::prefix('transaksi')->group(function(){
         Route::get('/', 'TransaksiController@transaksi')->name('transaksi');
         Route::post('/proses-transaksi', 'TransaksiController@proses_transaksi')->name('transaksi_proses_transaksi');
         Route::get('/proses_hapus/{id}', 'TransaksiController@proses_hapus')->name('transaksi_hapus');
@@ -127,3 +156,5 @@ Route::prefix('transaksi')->group(function(){
         Route::get('/kode_unik', 'TransaksiController@kode_unik')->name('kode_unik');
         Route::get('/invoice', 'TransaksiController@invoice')->name('invoice');
     });
+
+});

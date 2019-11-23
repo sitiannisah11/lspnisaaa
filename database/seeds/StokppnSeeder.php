@@ -13,7 +13,7 @@ class StokppnSeeder extends Seeder
     {
         DB::table('stok__ppns')->insert([
         	'stok' => '1',
-        	'ppn' => '10',
+        	'ppn' => '10'
         	]);
     }
 }

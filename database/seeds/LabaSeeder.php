@@ -12,7 +12,7 @@ class LabaSeeder extends Seeder
     public function run()
     {
         DB::table('labas')->insert([
-        	'nama' => '10',
+        	'nama' => '10'
         	]);
     }
 }

@@ -70,7 +70,7 @@
             <!-- /.title -->
             <ul class="menu js__accordion">
                 <li class="current">
-                    <a class="waves-effect" href="/adminindex"><i class="menu-icon fa fa-home"></i><span>Dashboard</span></a>
+                    <a class="waves-effect" href="/kasir"><i class="menu-icon fa fa-home"></i><span>Dashboard</span></a>
                 </li>
             </ul>
             <!-- /.menu js__accordion -->

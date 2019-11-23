@@ -109,7 +109,7 @@
     							<button type="submit" class="btn btn-icon btn-icon-left btn-success btn-xs waves-effect waves-light"><i class="ico fa fa-plus"></i>Bayar Barang</button>
                             </a>
                             <a href="{{route('transaksi_hapus_all')}}">
-    							<button type="submit" class="btn btn-icon btn-icon-left btn-danger btn-xs waves-effect waves-light"><i class="ico fa fa-plus"></i>Hapus Barang</button>
+    							<button type="submit" class="btn btn-icon btn-icon-left btn-danger btn-xs waves-effect waves-light hapus"><i class="ico fa fa-plus"></i>Hapus Barang</button>
                             </a>
     					</div>
     				</div>

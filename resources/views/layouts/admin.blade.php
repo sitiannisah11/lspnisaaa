@@ -100,6 +100,7 @@
                     <a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-th-large"></i><span>Inventory</span><span class="menu-arrow fa fa-angle-down"></span></a>
                     <ul class="sub-menu js__content">
                         <li><a href="/barang">Barang</a></li>
+                        <li><a href="/laporan_barang">Laporan Barang</a></li>
                     </ul>
                     <!-- /.sub-menu js__content -->
                 </li>
