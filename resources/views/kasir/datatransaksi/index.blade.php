@@ -7,10 +7,6 @@
     <div class="main-content">
         <div class="row small-spacing">
 
-          <a href="#" onclick="printDoc()" class="btn btn-success my-3" target="_blank">PRINT</a>
-        	
-
-
         <?php 
             $name = \App\Checkout::all();
          ?>
@@ -52,7 +48,9 @@
 </div>
 
 
-
+<a href="#" onclick="printDoc()" style="float: left;">
+                  <button type="submit" class="btn btn-icon btn-icon-left btn-success waves-effect waves-light"><i class="ico fa fa-print"></i>Print</button>
+          </a>
         </div>
     </div>
 </div>

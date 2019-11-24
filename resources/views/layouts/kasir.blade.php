@@ -8,6 +8,37 @@
     <meta name="author" content="">
 
     <title>POS</title>
+    <script src="/ninja/light/assets/scripts/jquery.min.js"></script>
+    <script src="/ninja/light/assets/scripts/modernizr.min.js"></script>
+    <script src="/ninja/light/assets/plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/ninja/light/assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/ninja/light/assets/plugin/nprogress/nprogress.js"></script>
+    <script src="/ninja/light/assets/plugin/sweet-alert/sweetalert.min.js"></script>
+    <script src="/ninja/light/assets/plugin/waves/waves.min.js"></script>
+    <!-- Full Screen Plugin -->
+    <script src="/ninja/light/assets/plugin/fullscreen/jquery.fullscreen-min.js"></script>
+
+    <script src="/ninja/light/assets/scripts/sweetalert.init.min.js"></script>
+
+
+     <link rel="stylesheet" href="/ninja/light/assets/styles/style.min.css">
+
+    <!-- mCustomScrollbar -->
+    <link rel="stylesheet" href="/ninja/light/assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+
+    <!-- Waves Effect -->
+    <link rel="stylesheet" href="/ninja/light/assets/plugin/waves/waves.min.css">
+
+    <!-- Sweet Alert -->
+    <link rel="stylesheet" href="/ninja/light/assets/plugin/sweet-alert/sweetalert.css">
+    
+    <!-- Color Picker -->
+    <link rel="stylesheet" href="/ninja/light/assets/color-switcher/color-switcher.min.css">
+
+
+
+
+
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="/ninja/light/assets/styles/style.min.css">

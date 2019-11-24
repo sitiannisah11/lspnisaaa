@@ -3,6 +3,12 @@
 
 <!-- DataTales Example -->
 
+ @if($message = Session::get('sukses'))
+                <div class="alert alert-primary alert-dismissible fade show" id="sal-basic">
+                    <button type="button" class="close h-100" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button> <strong>{{$message}}</strong></div>
+                @endif
+
 <div id="wrapper">
     <div class="main-content">
         <div class="row small-spacing">
@@ -22,9 +28,9 @@
 				              			@endforeach
 			            			</select>
 			        		</div>
-		          <input type="text" name="jumlah" class="form-control" placeholder="Banyak Item"><br>
+		          <input type="text" name="jumlah" class="form-control" placeholder="Banyak Item" required=""><br>
 
-		    <button type="submit" class="btn btn-icon btn-icon-left btn-primary btn-sm waves-effect waves-light"><i class="ico fa fa-plus"></i>Tambah</button>
+		    <button type="submit" class="btn btn-icon btn-icon-left btn-primary btn-sm waves-effect waves-light"><i class="ico fa fa-cart-plus"></i>Tambah</button>
 						</form>
 					</div>
 					<!-- /.card-content -->
@@ -63,9 +69,10 @@
     						<thead>
                                 <tr>
         							<td><strong>Item</strong></td>
-        							<td class="text-center"><strong>Price</strong></td>
+        							<td class="text-center"><strong>-</strong></td>
         							<td class="text-center"><strong>Quantity</strong></td>
         							<td class="text-right"><strong>Totals</strong></td>
+                                    <td class="text-right"><strong>Aksi</strong></td>
                                 </tr>
     						</thead>
     						<tbody>
@@ -74,9 +81,14 @@
                                 @foreach($carts->relasicart as $produk_cart)
     							<tr>
     								<td>{{$produk_cart->nama}}</td>
-    								<td class="text-center">tepu tepu</td>
+
+    								<td class="text-center">-</td>
+
     								<td class="text-center">{{$carts->jumlah}}</td>
     								<td class="text-right">Rp. {{$carts->sub_total}}</td>
+                                    <td style="float: right;">
+                                    <a href="{{route('transaksi_hapus', $carts->id)}}" class="btn btn-sm btn-danger hapus"><i class="ico fa fa-trash"></i></a>
+                                    </td>
     							</tr>
                                 @endforeach
                                 @endforeach
@@ -106,10 +118,10 @@
     					</table>
     					<div class="bayar" style="float: right;">
                             <a href="{{route('transaksi_checkout')}}">
-    							<button type="submit" class="btn btn-icon btn-icon-left btn-success btn-xs waves-effect waves-light"><i class="ico fa fa-plus"></i>Bayar Barang</button>
+    							<button type="submit" class="btn btn-icon btn-icon-left btn-success btn-xs waves-effect waves-light"><i class="ico fa fa-btc"></i>Bayar Barang</button>
                             </a>
                             <a href="{{route('transaksi_hapus_all')}}">
-    							<button type="submit" class="btn btn-icon btn-icon-left btn-danger btn-xs waves-effect waves-light hapus"><i class="ico fa fa-plus"></i>Hapus Barang</button>
+    							<button type="submit" class="btn btn-icon btn-icon-left btn-danger btn-xs waves-effect waves-light hapus"><i class="ico fa fa-trash"></i>Hapus Barang</button>
                             </a>
     					</div>
     				</div>

@@ -2,6 +2,11 @@
 @section('content')
 
 <!-- DataTales Example -->
+@if($message = Session::get('sukses'))
+                <div class="btn btn-primary waves-effect waves-light">
+                    <button type="button" class="close h-100" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button> <strong>{{$message}}</strong></div>
+@endif
 
 <div id="wrapper">
     <div class="main-content">
@@ -74,7 +79,7 @@
     						</tbody>
     					</table>
     					<input type="hidden" name="jumlah" value="{{$carts->jumlah}}">
-            			<input type="number" class="form-control" name="saldo" placeholder="Masukkan Jumlah Uang">
+            			<input type="number" class="form-control" name="saldo" placeholder="Masukkan Jumlah Uang"><br>
 
     					<div class="bayar" style="float: right;">
     						

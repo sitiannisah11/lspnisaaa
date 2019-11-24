@@ -90,7 +90,7 @@ class BarangController extends Controller
         $produk->harga_jual = $r->harga_beli + $persen;
         }
         $produk->save();
-        return redirect()->back()->with('sukses', 'Data Berhasil Diubah!');
+        return redirect(url('/barang'));
     }
 
     public function delete($id){

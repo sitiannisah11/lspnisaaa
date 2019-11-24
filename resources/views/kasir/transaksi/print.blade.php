@@ -6,14 +6,20 @@
 <div id="wrapper">
     <div class="main-content" >
         <div class="row small-spacing">
-          <a href="#" onclick="printDoc()" class="btn btn-success my-3" target="_blank">PRINT</a>
-          <a href="/transaksi"  class="btn btn-success my-3" target="_blank">Kembali Ke Transaksi</a>
+
+          <a href="#" onclick="printDoc()">
+                  <button type="submit" class="btn btn-icon btn-icon-left btn-success waves-effect waves-light"><i class="ico fa fa-print"></i>Print</button>
+          </a>
+          <a href="/transaksi">
+                  <button type="submit" class="btn btn-icon btn-icon-left btn-warning waves-effect waves-light"><i class="ico fa fa-backward"></i>Kembali</button>
+          </a>
+          
 
           <div class="box-content" id="section-to-print">
         	<div class="title" style="text-align: center;">
         	<h4>Bukti Pembayaran</h4>
         	<h4>POS ANDREA <h4>
-        	</div><br><br>
+        	</div><br>
 
 		<table class="table table-bordered">
 		  <thead>
@@ -31,40 +37,44 @@
 		      <td>{{$kode_uniks->jumlah}}</td>
 		      <td>{{$kode_uniks->sub_total}}</td>
 		    </tr>
-		    @endforeach
-		    @endforeach
         <br>
 		  </tbody>
-
+      @endforeach
+      @endforeach
 
 		</table>
 
 <!-- MANGGIL MODEL -->
+
+    @foreach($uang as $p)
     <table class="table table-condensed">
                   <tr>
                     <td class="no-line"></td>
                     <td class="no-line"></td>
                     <td class="no-line text-center"><strong>Total</strong></td>
-                    <td class="no-line text-right">454353</td>
+                    <td class="no-line text-right">{{$p->total}}</td>
                   </tr>
                   <tr>
                     <td class="no-line"></td>
                     <td class="no-line"></td>
                     <td class="no-line text-center"><strong>Uang Pelanggan</strong></td>
-                    <td class="no-line text-right">454353</td>
+                    <td class="no-line text-right">{{$p->saldo}}</td>
                   </tr>
                   <tr>
                     <td class="no-line"></td>
                     <td class="no-line"></td>
                     <td class="no-line text-center"><strong>Uang Kembalian</strong></td>
-                    <td class="no-line text-right">454353</td>
+                    <td class="no-line text-right">{{$p->kembalian}}</td>
                   </tr>
             </table>
+
+        @endforeach
 
 
         </div>
       </h4>
     </h4>
+
   </div>
     </div>
 </div>

@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+	@extends('layouts.admin')
 @section('content')
 
 <!-- DataTales Example -->
@@ -6,7 +6,7 @@
 <div id="wrapper">
     <div class="main-content">
         <div class="row small-spacing">
-        	<form  method="POST" action="/barang/proses_detail">
+        	<form  method="POST" action="{{route('proses_detail')}}">
         		@csrf
         	<div class="box-content" style="width: 90%;">
         		<div class="box-title">
@@ -75,24 +75,22 @@
 				            	<select class="form-control" name="laba" required="">
 			                		<option value="{{$produk->relasilaba->id}}">{{$produk->relasiunit->laba}}%</option>
 			              				@foreach($laba as $j)
-				                		<option value="{{$j->id}}" selected>{{$j->nama}}</option>
+				                		<option value="{{$j->nama}}" selected>{{$j->nama}}</option>
+				              			@endforeach
+		            			</select>	
+				            </div>
+
+				            <div class="col-12 col-md-6">
+				            	<select class="form-control" name="ppn" required="">
+			                		<option value="{{$produk->relasilaba->id}}">{{$produk->relasilaba->laba}}%</option>
+			              				@foreach($ppnstok as $j)
+				                		<option value="{{$j->ppn}}" selected>Stok :{{$j->stok}} - Ppn: {{$j->ppn}}</option>
 				              			@endforeach
 		            			</select>	
 				            </div>
 
 
-					        <div class="col-12 col-md-6">
-					        	<select class="form-control" name="ppn" required="">
-			                		<option value="">PPN</option>
-			              			@foreach($ppnstok as $j)
-                              			@if($j->id == $ppnstok->ppn)
-				                		<option value="{{$j->id}}" selected>{{$j->ppn}}</option>
-                            			@else
-                            			<option value="{{$j->id}}">{{$j->ppn}}</option>
-                            			@endif
-				              			@endforeach
-		            			</select>
-					        </div>
+					        
 
 					        
 			        	</div><br>

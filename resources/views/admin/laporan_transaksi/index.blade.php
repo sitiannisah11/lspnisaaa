@@ -6,16 +6,16 @@
 <div id="wrapper">
     <div class="main-content">
         <div class="row small-spacing">
-        	
+
 
 
         <?php 
-            $name = \App\Produk::all();
+            $name = \App\Checkout::all();
          ?>
 
          <div class="box-content" id="section-to-print" width="100%">
         	<div class="title" style="text-align: center;">
-        	<h4>Laporan Barang</h4>
+        	<h4>Laporan Transaksi</h4>
         	<h4>POS ANDREA <h4>
         	</div><br><br>
 
@@ -23,22 +23,24 @@
 		  <thead>
 		    <tr>
 		      <th scope="col">No</th>
-		      <th scope="col">Barcode</th>
-		      <th scope="col">Nama Barang</th>
-		      <th scope="col">Harga Beli</th>
-		      <th scope="col">Harga Jual</th>
-          <th scope="col">Keterangan</th>
+		      <th scope="col">Kode Unik</th>
+		      <th scope="col">User Id</th>
+		      <th scope="col">Saldo</th>
+		      <th scope="col">Total Harga</th>
+          <th scope="col">Kembalian</th>
+          <th scope="col">Metode</th>
 		    </tr>
 		  </thead>
 		  <tbody>
-		    @foreach ($name as $barang)
+		    @foreach ($name as $transaksi)
 		    <tr>
 		      <td>{{ $loop->iteration }}</td>
-		      <td>{{$barang->barcode}}</td>
-          <td>{{$barang->nama}}</td>
-          <td>{{$barang->harga_beli}}</td>
-          <td>{{$barang->harga_jual}}</td>
-          <td>{{$barang->keterangan}}</td>
+		      <td>{{$transaksi->kode_unik}}</td>
+          <td>{{$transaksi->user_id}}</td>
+          <td>{{$transaksi->saldo}}</td>
+          <td>{{$transaksi->total}}</td>
+          <td>{{$transaksi->kembalian}}</td>
+          <td>{{$transaksi->metode}}</td>
 		    </tr>
 		    @endforeach
         <br>

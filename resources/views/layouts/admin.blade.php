@@ -8,6 +8,20 @@
     <meta name="author" content="">
 
     <title>POS</title>
+    <link rel="stylesheet" href="/ninja/light/assets/styles/style.min.css">
+
+    <!-- mCustomScrollbar -->
+    <link rel="stylesheet" href="/ninja/light/assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+
+    <!-- Waves Effect -->
+    <link rel="stylesheet" href="/ninja/light/assets/plugin/waves/waves.min.css">
+
+    <!-- Sweet Alert -->
+    <link rel="stylesheet" href="/ninja/light/assets/plugin/sweet-alert/sweetalert.css">
+    
+    <!-- Color Picker -->
+    <link rel="stylesheet" href="/ninja/light/assets/color-switcher/color-switcher.min.css">
+
 
     <link rel="stylesheet" href="/ninja/light/assets/plugin/datatables/media/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="/ninja/font-awesome/css/all.css" />
@@ -101,6 +115,7 @@
                     <ul class="sub-menu js__content">
                         <li><a href="/barang">Barang</a></li>
                         <li><a href="/laporan_barang">Laporan Barang</a></li>
+                        <li><a href="/laporan_transaksi">Laporan Transaksi</a></li>
                     </ul>
                     <!-- /.sub-menu js__content -->
                 </li>
@@ -209,6 +224,21 @@
     <script src="/ninja/light/assets/plugin/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
     <script src="/ninja/light/assets/plugin/datatables/extensions/Responsive/js/responsive.bootstrap.min.js"></script>
     <script src="/ninja/light/assets/scripts/datatables.demo.min.js"></script>
+
+
+
+
+    <script src="/ninja/light/assets/scripts/jquery.min.js"></script>
+    <script src="/ninja/light/assets/scripts/modernizr.min.js"></script>
+    <script src="/ninja/light/assets/plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/ninja/light/assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/ninja/light/assets/plugin/nprogress/nprogress.js"></script>
+    <script src="/ninja/light/assets/plugin/sweet-alert/sweetalert.min.js"></script>
+    <script src="/ninja/light/assets/plugin/waves/waves.min.js"></script>
+    <!-- Full Screen Plugin -->
+    <script src="/ninja/light/assets/plugin/fullscreen/jquery.fullscreen-min.js"></script>
+
+    <script src="/ninja/light/assets/scripts/sweetalert.init.min.js"></script>
 </body>
 </html>
 

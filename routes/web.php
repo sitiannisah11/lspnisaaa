@@ -79,6 +79,7 @@ Route::group(['middleware' => 'admin'], function(){
 
     Route::get('/admin', function () { return view('admin.index');});
     Route::get('/laporan_barang', function () { return view('admin.laporan_barang.index');});
+    Route::get('/laporan_transaksi', function () { return view('admin.laporan_transaksi.index');});
 
     Route::prefix('cur')->group(function(){
     Route::get('/', 'CurController@index');
