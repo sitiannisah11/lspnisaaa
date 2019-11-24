@@ -84,8 +84,8 @@
 					        <div class="col-12 col-md-6">
 					        	<select class="form-control" name="ppn" required="">
 			                		<option value="">PPN</option>
-			              			@foreach($stok_minimum as $j)
-                              			@if($j->id == $produk->ppn)
+			              			@foreach($ppnstok as $j)
+                              			@if($j->id == $ppnstok->ppn)
 				                		<option value="{{$j->id}}" selected>{{$j->ppn}}</option>
                             			@else
                             			<option value="{{$j->id}}">{{$j->ppn}}</option>
@@ -94,18 +94,7 @@
 		            			</select>
 					        </div>
 
-					        <!-- <div class="col-12 col-md-6">
-					        	<select class="form-control" name="stokppn_id" required="">
-			                		<option value="">Stok dan PPN</option>
-                                    @foreach($stok_minimum as $j)
-                              			@if($j->id == $produk->stokppn_id)
-				                		<option value="{{$j->id}}" selected>Stok Minimum: {{$j->stok}} - PPN: {{$j->ppn}}%</option>
-                            			@else
-                            			<option value="{{$j->id}}">Stok Minimum: {{$j->stok}} - PPN: {{$j->ppn}}%</option>
-                            			@endif
-				              			@endforeach
-		            			</select>
-					        </div> -->
+					        
 			        	</div><br>
 
 

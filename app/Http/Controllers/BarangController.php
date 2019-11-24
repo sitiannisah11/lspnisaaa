@@ -62,9 +62,9 @@ class BarangController extends Controller
         $matauang = Mata_Uang::all();
         $unit = Unit::all();
         $laba = Laba::all();
-        $stok_minimum = Stok_Ppn::all();
+        $ppnstok = Stok_Ppn::all();
         $produk = Produk::where('barcode', $barcode)->first();
-        return view('admin.barang.edit', compact('produk', 'kategori', 'matauang', 'unit', 'laba', 'stok_minimum'));
+        return view('admin.barang.edit', compact('produk', 'kategori', 'matauang', 'unit', 'laba', 'ppnstok'));
     }
 
     public function proses_detail(Request $r) {
