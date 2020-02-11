@@ -76,7 +76,7 @@
         <?php 
             $name = \App\User::where('id', Auth::user()->id)->first();
          ?>
-            <a href="#" class="avatar"><img src="/foto/user.png" alt=""><span class="status online"></span></a>
+            <a href="#" class="avatar"><img src="/foto/kasir1.png" alt=""><span class="status online"></span></a>
             <h5 class="name"><a href="profile.html">{{$name->name}}</a></h5>
             <h5 class="position">Administrator</h5>
             <!-- /.name -->
@@ -111,7 +111,7 @@
                 <li>
                     <a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-th-large"></i><span>Master</span><span class="menu-arrow fa fa-angle-down"></span></a>
                     <ul class="sub-menu js__content">
-                        <li><a href="/transaksi">Transaksi</a></li>
+                        <li><a href="/transaksi">Transaksi</li></a>
                         <li><a href="/datatransaksi">Data Transaksi</a></li>
                     </ul>
                     <!-- /.sub-menu js__content -->

@@ -9,11 +9,11 @@
             
             <div class="col-lg-3 col-md-6 col-xs-12">
                 <div class="box-content">
-                    <h4 class="box-title">Data Barang</h4>
+                    <h4 class="box-title">Inventory</h4>
                     <div class="statistics-box with-icon">
                         <i class="ico fa fa-apple text-inverse"></i>
                         <h2 class="counter text-inverse">2561</h2>
-                        <p class="text">Some text here</p>
+                 <!--        <p class="text">Some text here</p> -->
                     </div>
                 </div>
                 <!-- /.box-content -->

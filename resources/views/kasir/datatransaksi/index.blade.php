@@ -14,7 +14,7 @@
          <div class="box-content" id="section-to-print">
         	<div class="title" style="text-align: center;">
         	<h4>Data Transaksi</h4>
-        	<h4>POS ANDREA <h4>
+        	<h4>POS NISA <h4>
         	</div><br><br>
 
 		<table class="table table-bordered">

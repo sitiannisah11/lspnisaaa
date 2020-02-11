@@ -47,7 +47,7 @@
             $name = \App\User::where('id', Auth::user()->id)->first();
          ?>
 
-            <a href="#" class="avatar"><img src="/foto/superadmin.png" alt=""><span class="status online"></span></a>
+            <a href="#" class="avatar"><img src="/foto/superadmin3.png" alt=""><span class="status online"></span></a>
             <h5 class="name"><a href="profile.html">{{$name->name}}</a></h5>
             <h5 class="position">Super Admin</h5>
             <!-- /.name -->

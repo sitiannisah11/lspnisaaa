@@ -33,7 +33,7 @@ class BarangController extends Controller
     	$d->kategori_id = $r->input("kategori_id");
     	$d->unit_id = $r->input("unit_id");
     	$d->mata_uang_id = $r->input("mata_uang_id");
-    	$d->barcode = rand(1000,10000000000);
+    	$d->barcode = rand(11111111,99999999).rand(11111111,99999999);
     	$d->nama = $r->input("nama");
     	$d->harga_beli = $r->input("harga_beli");
     	$d->stok = $r->input("stok");

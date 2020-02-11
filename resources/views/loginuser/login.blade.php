@@ -3,7 +3,7 @@
 <!-- saved from url=(0044)http://siakad.trilogi.ac.id/gate/menu#siakad -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-        <title>Cyber Soft</title>
+        <title>POS</title>
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <meta name="description" content="siAkad Cloud solusi terbaik Perguruan Tinggi. Langsung Bisa Digunakan, Tidak Ribet dan Pelaporan Beres.">
         <meta name="keywords" content="">
@@ -13,7 +13,7 @@
         <!-- Theme style -->
 
         <link href="/login-template/Universitas Trilogi_files/login-v2.css" rel="stylesheet" type="text/css">
-        <link rel="icon" type="img/png" href="/foto/user.png" sizes="16x16">
+        <link rel="icon" type="img/png" href="/foto/images.png" sizes="16x16">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!-- Custom fonts for this template-->
@@ -27,11 +27,11 @@
           <![endif]-->
         <style type="text/css">
             .login-page .form-box .univ-identity-box{
-                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('/foto/pos.jpg') bottom;
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('/foto/pos3.jpg') bottom;
                 background-size:cover;
             }
             html, body{
-                background-image: url('/foto/dd.jpg');
+                background-image: url('/foto/bd.png');
                 background-size: cover;
             }
             .password{
@@ -49,7 +49,7 @@
                 padding: 0 !important;
             }
             .univ-text-container {
-                background-color: rgba(0, 88, 168, 0.8);
+                background-color: #128c7e;
                 bottom: 0;
                 padding: 5px 30px 20px 30px;
                 position: absolute;
@@ -69,16 +69,16 @@
                     <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12 univ-identity-box">
                         <div class="univ-text-container">
                             <div class="univ-text">
-                                <h4 class="welcome text-light">Selamat Datang</h4>
+                                <h4 class="welcome text-light">WELCOME</h4>
                                 <div class="clearfix"></div>
-                                <h2 class="no-margin text-light">P O S</h2>
-                                <h3 class="no-margin"><b>Andrea</b></h3>
+                                <h2 class="no-margin text-light">Point Of Sales</h2>
+                                <h3 class="no-margin"><b>Nisa</b></h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 form-login" align="center">
                         <img src="/foto/user.png" class="logo"><br>
-                        <h2 align="center" class="text-grey text-light">Silakan Login</h2><br>
+                        <h2 align="center" class="text-grey text-light">Silahkan Login</h2><br>
                         <form method="POST" action="/loginuser/proses-login">
                             @csrf
 
@@ -95,7 +95,7 @@
                             </div>       
                             <br>
                             <div class="form-group" align="center">
-                                <button type="submit" class="btn btn-flat btn-primary ">Masuk Aplikasi <i class="fa fa-angle-right"></i></button>
+                                <button type="submit" class="btn btn-flat btn-primary ">LOGIN <i class="fa fa-angle-right"></i></button>
                             </div>
                         </form>
                     </div>

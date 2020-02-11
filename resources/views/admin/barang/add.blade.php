@@ -26,6 +26,7 @@
 			            			</select>
 			        		</div>
 
+
 		          
                     	<div class="row">
 				            <div class="col-12 col-md-6">
@@ -80,8 +81,6 @@
          		<button type="submit" class="btn btn-primary btn-sm waves-effect waves-light" style="float: right;">Tambah</button>
 		    </div><br>
 		    </form>
-
-
 
 
        	</div>

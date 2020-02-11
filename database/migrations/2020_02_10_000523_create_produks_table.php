@@ -31,8 +31,8 @@ class CreateProduksTable extends Migration
 
 
             $table->foreign("kategori_id")->references("id")->on("kategoris")->onUpdate("cascade")->onDelete("cascade");
-            $table->foreign("mata_uang_id")->references("id")->on("units")->onUpdate("cascade")->onDelete("cascade");
-            $table->foreign("unit_id")->references("id")->on("mata__uangs")->onUpdate("cascade")->onDelete("cascade");
+            $table->foreign("unit_id")->references("id")->on("units")->onUpdate("cascade")->onDelete("cascade");
+            $table->foreign("mata_uang_id")->references("id")->on("mata__uangs")->onUpdate("cascade")->onDelete("cascade");
         });
     }
 

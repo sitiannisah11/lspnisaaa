@@ -157,5 +157,5 @@ Route::group(['middleware' => 'kasir'], function(){
         Route::get('/kode_unik', 'TransaksiController@kode_unik')->name('kode_unik');
         Route::get('/invoice', 'TransaksiController@invoice')->name('invoice');
     });
-
+    
 });

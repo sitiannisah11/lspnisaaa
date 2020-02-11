@@ -22,7 +22,7 @@ class TransaksiController extends Controller
     }
     public function proses_transaksi(Request $r) {
         if(!Session::get('kode_unik')){
-            Session::put('kode_unik', rand(1111111111,9999999999));
+            Session::put('kode_unik', rand(11111111,99999999));
         }
         if($r->produk_id == '0'){
             return redirect(route('transaksi'))->with('sukses', 'Anda Belum Memilih Produk!');

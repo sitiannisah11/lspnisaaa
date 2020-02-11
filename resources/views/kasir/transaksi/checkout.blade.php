@@ -22,12 +22,12 @@
 						<li>
 							<div class="radio info"><input type="radio" checked name="metode" id="radio-10" value="Cash"><label for="radio-10">Cash</label></div>
 						</li>
-						<li>
+						<!-- <li>
 							<div class="radio pink"><input type="radio" name="metode" id="radio-11" value="Gopay"><label for="radio-11">Gopay</label></div>
-						</li>
-						<li>
+						</li> -->
+						<!-- <li>
 							<div class="radio inverse"><input type="radio" name="metode" id="radio-12" value="Dana"><label for="radio-12">Dana</label></div>
-						</li>
+						</li> -->
 					</ul>
 					</div>
 				</div>
@@ -51,14 +51,14 @@
     								<td class="no-line text-right">Price</td>
     							</tr>
 
-    							@foreach($cart as $carts)
-					            @foreach($carts->relasicart as $produk_cart)
+    							@foreach($cart as $cart)
+					            @foreach($cart->relasicart as $produk_cart)
 					            <input type="hidden" name="produk_id" value="{{$produk_cart->id}}[]">
     							<tr>
     								<td class="thick-line"></td>
     								<td class="thick-line"></td>
-    								<td class="thick-line">{{$produk_cart->nama}} x{{$carts->jumlah}}</td>
-    								<td class="thick-line text-right">Rp. {{$carts->sub_total}}</td>
+    								<td class="thick-line">{{$produk_cart->nama}} {{$cart->jumlah}}</td>
+    								<td class="thick-line text-right">Rp. {{$cart->sub_total}}</td>
     							</tr>
 
 					            @endforeach
@@ -73,12 +73,13 @@
     								<td class="no-line text-right">Rp. {{$cart->sum('sub_total')}}</td>
     								@else
     								<td class="no-line text-right">Rp. </td>
+
     								@endif
     							</tr>
 
     						</tbody>
     					</table>
-    					<input type="hidden" name="jumlah" value="{{$carts->jumlah}}">
+                        <input type="hidden" name="jumlah" value="{{$cart->jumlah}}">
             			<input type="number" class="form-control" name="saldo" placeholder="Masukkan Jumlah Uang"><br>
 
     					<div class="bayar" style="float: right;">

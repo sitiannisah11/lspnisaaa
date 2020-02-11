@@ -16,7 +16,8 @@
          <div class="box-content" id="section-to-print" width="100%">
         	<div class="title" style="text-align: center;">
         	<h4>Laporan Transaksi</h4>
-        	<h4>POS ANDREA <h4>
+        	<h4>POS SMKN 10 JAKARTA<h4>
+          <h4>Jl. Smea 6 Mayjen Soetoyo</h4>
         	</div><br><br>
 
 		<table class="table table-bordered">
@@ -82,4 +83,4 @@
   function printDoc(){
     window.print()
   }
-</script>
+</script>                                                                

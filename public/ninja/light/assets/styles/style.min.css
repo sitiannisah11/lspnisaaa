@@ -55,7 +55,7 @@ input {
 a {
     text-decoration: none!important;
     outline: none;
-    color: #304ffe
+    color: #000000
 }
 
 a:active,
@@ -416,7 +416,7 @@ h4 strong {
 }
 
 .btn {
-    background: #e4e7ea;
+    background: #128c7e;
     outline: none!important;
     font-size: 16px;
     line-height: 26px;
@@ -625,7 +625,7 @@ h4 strong {
 }
 
 .btn-primary {
-    background: #304ffe
+    background: #128c7e
 }
 
 .btn-primary:active,
@@ -1073,7 +1073,7 @@ h4 strong {
     z-index: 20;
     right: 0px;
     padding: 0px 20px 0px 80px;
-    background: #ea3535;
+    background: #075e54;
     color: #ffffff
 }
 
@@ -1209,7 +1209,7 @@ h4 strong {
     white-space: nowrap;
     overflow: hidden;
     color: #ffffff;
-    background: #ea3535;
+    background: #075e54;
     font-weight: 500
 }
 
@@ -1480,7 +1480,7 @@ h4 strong {
 }
 
 .navigation .menu>li.current>a {
-    background: #ea3535;
+    background: #128c7e;
     color: #ffffff
 }
 
@@ -1489,7 +1489,7 @@ h4 strong {
 }
 
 .navigation .menu>li.current .current>a {
-    color: #304ffe
+    color: #000000
 }
 
 .navigation .menu>li.current .sub-menu {
@@ -1578,7 +1578,7 @@ h4 strong {
         top: 0;
         width: 75px;
         height: 75px;
-        background: #ea3535;
+        background: #075e54;
         z-index: -2
     }
     .menu-active .header .logo:after {
@@ -2749,7 +2749,7 @@ table.focus-on tbody tr.focused th {
     font-size: 20px;
     line-height: 75px;
     color: #ffffff;
-    background: #ea3535
+    background: #075e54
 }
 
 .morris-chart-detail-list {

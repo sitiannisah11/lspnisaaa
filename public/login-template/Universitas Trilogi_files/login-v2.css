@@ -2943,7 +2943,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 .btn-primary {
     color: #fff;
     background-color: #337ab7;
-    border-color: #2e6da4; }
+    border-color: #075e54; }
 .btn-primary:focus, .btn-primary.focus {
     color: #fff;
     background-color: #286090;
@@ -8183,7 +8183,7 @@ button.close {
     font-size: 1.5rem;
     left: 1.5rem;
     margin-top: .7rem;
-    color: #0058a8; }
+    color: #128c7e; }
 
 .icon-input + input {
     width: calc(100% - 2.5rem);
@@ -8218,7 +8218,7 @@ button.close {
     border-bottom: 2px solid rgba(0, 0, 0, 0.3); }
 
 .btn-primary, .alert-primary, .label-primary {
-    background: #0058a8; }
+    background: #128c7e; }
 
 .btn-primary:hover {
     background: #003d75; }
